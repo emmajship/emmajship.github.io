@@ -1,0 +1,40 @@
+@font-face {
+  font-family: Editorial New;
+  src: url(./fonts/PPEditorialNew-Regular.woff2);
+  font-style: normal;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* background-color: white; */
+  min-height: 100vh;
+  /* makes the html element taller */
+  font-family: "Courier", monospace !important;
+}
+
+h1 {
+  font-family: "Helvetica", sans-serif;
+  line-height: 1 em;
+  font-weight: 100;
+  font-style: normal;
+}
+
+hr {
+  color: #000000;
+}
+
+.overlay {
+  top:0;
+  left:0;
+}
+
+canvas {
+  display: block;
+  position: fixed;
+  /* allows it to be moved. this could also be "fixed". if there's more content on the site this might not even be necessary becasue it could end up at the bottom of the viewport anyway */
+  bottom: 0;
+  /* moves it */
+  z-index: -1;
+}
